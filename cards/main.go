@@ -9,12 +9,19 @@ func main() {
 	// cards = append(cards, "Six of Spades")
 
 	cards := newDeck()
+	cards.print()
 	// for i, card := range cards {
 	// 	fmt.Println(i, card)
 	// }
-	hand, remaining_deck := deal(cards, 5)
-	hand.print()
-	remaining_deck.print()
+	// hand, remaining_deck := deal(cards, 5)
+	// hand.print()
+	// remaining_deck.print()
+	// fmt.Println(hand.toString())
+	// hand.saveToFile("./123.txt")
+	// f_cards := newDeckFromFile("123.txt")
+	// f_cards.print()
+	cards.shuffle()
+	cards.print()
 }
 
 // func newCard() string {

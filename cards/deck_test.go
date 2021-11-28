@@ -27,6 +27,5 @@ func TestSaveFileLoadFile(t *testing.T) {
 	if len(loadedDeck) != 52 {
 		t.Error("Expected 52 cards but got", len(loadedDeck))
 	}
-
 	os.Remove("_decktesting")
 }
